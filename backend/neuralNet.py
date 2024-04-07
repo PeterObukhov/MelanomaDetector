@@ -33,9 +33,6 @@ class NeuralNet:
             3: ('df', 'Дерматофиброма')}
 
     def __init__(self):
-        self.df = pd.read_csv(self.hmnist_28_28_RGB, delimiter=',')
-        self.label = self.df["label"]
-        self.data = self.df.drop(columns=["label"])
         if(os.path.isfile('backend/final.keras')):
             self.loadModel()
     
@@ -46,6 +43,9 @@ class NeuralNet:
         self.label = np.array(self.label)
 
     def trainModel(self):
+        self.df = pd.read_csv(self.hmnist_28_28_RGB, delimiter=',')
+        self.label = self.df["label"]
+        self.data = self.df.drop(columns=["label"])
         self.oversampleData()
         X_train, X_test, y_train, y_test = train_test_split(self.data, self.label, test_size = 0.2, random_state = 42)
         learning_rate_reduction = ReduceLROnPlateau(monitor='val_accuracy', patience = 5, verbose=1, factor=0.5, min_lr=0.00001)

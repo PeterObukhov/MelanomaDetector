@@ -20,7 +20,6 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    text-align: right;
     z-index: 1;
 }
 .upper-right-blob{
@@ -30,19 +29,24 @@ body {
 }
 .upper-right-text{
     position: absolute;
+    text-align: justify;
     z-index: 2;
     top: 21px;
     right: 30px;
     height: 100px;
-    width: 700px;
+    width: 800px;
+    font-size: 24px;
+    color: #ffffff;
 }
 .check-link{
     position: absolute;
     top: 140px;
     right: 30px;
-    font-size: 20px;
+    font-size: 32px;
+    font-weight: 700;
     text-decoration: underline;
     color: #000000;
+    letter-spacing: 3px;
 }
 .check-link:hover{
     color:#5c5c5c
@@ -55,20 +59,24 @@ body {
 }
 .bottom-right-text{
     color: #5c5c5c;
-    text-align: right;
+    text-align: justify;
     position: absolute;
     bottom: 0;
     right: 31px;
     z-index: 2;
-    height: 75px;
-    width: 350px;
+    height: 95px;
+    width: 522px;
+    font-size: 24px;
+    color: #ffffff;
 }
 
 .main-text{
-    width: 750px;
+    font-size: 20px;
+    width: 1295px;
     height: 350px;
     text-align: justify;
     position: absolute;
     top: 420px;
-    right: 400px;
+    right: 65px;
+    line-height: 25px;
 }

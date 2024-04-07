@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="main-page-style.css">
+        <link rel="stylesheet" href="./styles/main-page-style.css">
     </head>
     <body>
         <div class="left-container">
@@ -16,7 +16,7 @@
                 имеющиеся опасения насчет какого-либо кожного образования, обозначив<br/>
                 необходимость посещения врача 
             </div>
-            <a class="check-link">ПРОВЕРИТЬ</a>
+            <a class="check-link" href="check-page.html">ПРОВЕРИТЬ</a>
         </div>
 
         
@@ -31,20 +31,5 @@
             <br/>
             По статистике, за 2021 год впервые диагностировали меланому кожи у 11 412 жителей России, 19,6% из которых были обнаружены на поздних (III и IV) стадиях. Однако, прогноз меланомы сильно зависит от стадии, на которой была удалена первичная опухоль: в случаях, когда это произошло на I стадии, прогноз выживаемости составляет 80-90%, в свою очередь, в случаях, когда диагноз был поставлен на II стадии, выживаемость составляет лишь 30-50%, в зависимости от подстадии.Таким образом, сокращение времени первичной диагностики меланомы кожи является одной из первостепенных задач современной науки и медицины.
         </div>
-
-        <script src="submit.js"></script>
-        <script>
-            function readURL(input) {
-                if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-
-                    reader.onload = function (e) {
-                        image.src = URL.createObjectURL(input.files[0])
-                    };
-
-                    reader.readAsDataURL(input.files[0]);
-                }
-            }
-        </script>
     </body>
 </html>

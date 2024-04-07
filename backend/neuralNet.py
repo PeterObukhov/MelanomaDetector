@@ -20,7 +20,7 @@ from sklearn.metrics import confusion_matrix , classification_report
 class NeuralNet:
     metadata = "Dataset/HAM10000_metadata.csv"
     hmnist_8_8_RGB = "Dataset/hmnist_8_8_RGB.csv"
-    hmnist_28_28_RGB = "Dataset/hmnist_28_28_RGB.csv"
+    hmnist_28_28_RGB = "backend/Dataset/hmnist_28_28_RGB.csv"
     hmnist_8_8_L = "Dataset/hmnist_8_8_L.csv"
     hmnist_28_28_L = "Dataset/hmnist_28_28_L.csv"
 
@@ -36,7 +36,7 @@ class NeuralNet:
         self.df = pd.read_csv(self.hmnist_28_28_RGB, delimiter=',')
         self.label = self.df["label"]
         self.data = self.df.drop(columns=["label"])
-        if(os.path.isfile('final.keras')):
+        if(os.path.isfile('backend/final.keras')):
             self.loadModel()
     
     def oversampleData(self):
@@ -55,7 +55,7 @@ class NeuralNet:
         self.model.fit(X_train, y_train, epochs=7, batch_size=128, validation_data=(X_test, y_test), callbacks=[learning_rate_reduction, early_stopping])
         
     def loadModel(self):
-        self.model = keras.models.load_model('./final.keras')
+        self.model = keras.models.load_model('backend/final.keras')
 
     def predict(self, image):
         pred =  self.model.predict(image)

@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel="stylesheet" href="./styles/check-page-style.css">
     </head>
-
     <body>
-    <!-- <form method="post" id="image-form" enctype="multipart/form-data">
-                <div class="content-block">
-                    <div class="image-upload-container">
-                        <label for="imageInput">Изображение:</label>
-                        <input type="file" onchange="readURL(this)" id="imageInput" accept="image/*" /><br />
-                        </div>
-                        <div class="image-container">
-                            <img id="image" src="#" alt="your image" width="400" height="300"/>
-                        </div>
-                        <div classs="submit-container">
-                            <input type="submit" id="submit" value="Подтвердить" />
-                        </div>
-                        <div>
-                            <label id="result"></label>
-                        </div>
-                    </div>
-            </form> -->
+        <div class="left-container">
+            <img class="left-blob" src="./assets/Vector 1.svg"></img>
+            <img src="./assets/people.svg">
+        </div>
+
+        <div class="upper-right-container">
+            <img class="upper-right-blob" src="./assets/Vector 2.svg"></img>
+            <a class="back-link" href="main-page.html">ВОЗВРАТ НА ГЛАВНУЮ СТРАНИЦУ</a>
+        </div>
+
+        <img class="bottom-right-blob" src="./assets/Vector 3.svg"></img>
+        <div class="bottom-right-text">
+            Программа не является абсолютно точной, поэтому, в случае сомнений, необходимо посетить специалиста в данной области.
+        </div>
+
+        <form method="post" id="image-form" enctype="multipart/form-data">
+            <div class="content-block">
+                <div class="image-upload-container">
+                    <label for="imageInput">Изображение:</label>
+                    <input type="file" onchange="readURL(this)" id="imageInput" accept="image/*" /><br />
+                </div>
+                <div class="image-container">
+                    <img id="image" src="#" alt="your image" width="400" height="300"/>
+                </div>
+                <div classs="submit-container">
+                    <input type="submit" id="submit" value="Подтвердить" />
+                </div>
+                <div>
+                    <label id="result"></label>
+                </div>
+            </div>
+        </form>
+        
+
+        <script src="submit.js"></script>
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        image.src = URL.createObjectURL(input.files[0])
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
     </body>
 </html>

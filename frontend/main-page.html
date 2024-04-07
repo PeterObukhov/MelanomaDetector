@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main-page-style.css">
+    </head>
+    <body>
+        <div class="left-container">
+            <img class="left-blob" src="./assets/Vector 1.svg"></img>
+            <img src="./assets/people.svg">
+        </div>
+
+        <div class="upper-right-container">
+            <img class="upper-right-blob" src="./assets/Vector 2.svg"></img>
+            <div class="upper-right-text">
+                Данное приложение может помочь пользователям на раннем этапе подтвердить<br/>
+                имеющиеся опасения насчет какого-либо кожного образования, обозначив<br/>
+                необходимость посещения врача 
+            </div>
+            <a class="check-link">ПРОВЕРИТЬ</a>
+        </div>
+
+        
+        <img class="bottom-right-blob" src="./assets/Vector 3.svg"></img>
+        <div class="bottom-right-text">
+            Программа не является абсолютно точной, поэтому, в случае сомнений, необходимо посетить специалиста в данной области.
+        </div>
+        
+        <div class="main-text">
+            <b>Меланома кожи – злокачественная опухоль нейроэктодермального происхождения, исходящая из меланоцитов  (пигментных клеток)   кожи</b>
+            <br/>
+            <br/>
+            По статистике, за 2021 год впервые диагностировали меланому кожи у 11 412 жителей России, 19,6% из которых были обнаружены на поздних (III и IV) стадиях. Однако, прогноз меланомы сильно зависит от стадии, на которой была удалена первичная опухоль: в случаях, когда это произошло на I стадии, прогноз выживаемости составляет 80-90%, в свою очередь, в случаях, когда диагноз был поставлен на II стадии, выживаемость составляет лишь 30-50%, в зависимости от подстадии.Таким образом, сокращение времени первичной диагностики меланомы кожи является одной из первостепенных задач современной науки и медицины.
+        </div>
+
+        <script src="submit.js"></script>
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        image.src = URL.createObjectURL(input.files[0])
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
+    </body>
+</html>

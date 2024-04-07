@@ -58,7 +58,9 @@ body {
     text-decoration: underline;
     color: #000000;
 }
-
+.back-link:hover{
+    color:#5c5c5c
+}
 .bottom-right-blob{
     position: absolute;
     bottom: 0;

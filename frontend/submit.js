@@ -15,7 +15,7 @@ async function formSubmit(e){
                     
         const responseData = await response.json();
         console.log(responseData)
-        document.getElementById("result").innerHTML = responseData.result;
+        document.getElementById("result").innerHTML = "Результат: " + responseData.result;
     }
     catch (error){
         console.log(error.message)

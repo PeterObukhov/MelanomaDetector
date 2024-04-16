@@ -4,8 +4,6 @@ import math
 
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import tensorflow as tf
 
 from keras.callbacks import *
@@ -15,7 +13,6 @@ from keras.models import Model, Sequential
 from keras.layers import *
 
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix , classification_report
 
 class NeuralNet:
     metadata = "Dataset/HAM10000_metadata.csv"

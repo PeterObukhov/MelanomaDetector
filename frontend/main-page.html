@@ -16,7 +16,6 @@
                 имеющиеся опасения насчет какого-либо кожного образования, обозначив
                 необходимость посещения врача 
             </div>
-            <a class="check-link" href="check-page.html">ПРОВЕРИТЬ</a>
         </div>
 
         
@@ -25,16 +24,37 @@
             Программа не является абсолютно точной, поэтому, в случае сомнений, необходимо посетить специалиста в данной области.
         </div>
         
-        <div class="main-text">
-            <p style="font-size: 32px; font-weight: 800; line-height: 42px;">Меланома кожи – злокачественная опухоль нейроэктодермального происхождения, исходящая из меланоцитов  (пигментных клеток)   кожи</p>
-            <p>
-                По статистике, за 2021 год впервые диагностировали меланому кожи у 11 412 жителей России, 19,6% 
-                из которых были обнаружены на поздних (III и IV) стадиях. Однако, прогноз меланомы сильно зависит 
-                от стадии, на которой была удалена первичная опухоль: в случаях, когда это произошло на I стадии, 
-                прогноз выживаемости составляет 80-90%, в свою очередь, в случаях, когда диагноз был поставлен на 
-                II стадии, выживаемость составляет лишь 30-50%, в зависимости от подстадии.Таким образом, сокращение 
-                времени первичной диагностики меланомы кожи является одной из первостепенных задач современной науки и медицины.
-            </p>
-        </div>
+        <form method="post" id="image-form" enctype="multipart/form-data">
+            <div class="content-block">
+                <div class="image-upload-container">
+                    <label for="imageInput">Изображение:</label>
+                    <input type="file" onchange="readURL(this)" id="imageInput" accept="image/*" /><br />
+                </div>
+                <div class="image-container">
+                    <img id="image" src="#" alt="your image" width="400" height="300"/>
+                </div>
+                <div classs="submit-container">
+                    <input type="submit" id="submit" value="Подтвердить" />
+                </div>
+                <div>
+                    <label class="result" id="result"></label>
+                </div>
+            </div>
+        </form>
+        
+        <script src="submit.js"></script>
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        image.src = URL.createObjectURL(input.files[0])
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
     </body>
 </html>

@@ -62,10 +62,10 @@ body {
     text-align: justify;
     position: absolute;
     bottom: 0;
-    right: 31px;
+    right: 7px;
     z-index: 2;
-    height: 95px;
-    width: 522px;
+    height: 120px;
+    width: 640px;
     font-size: 24px;
     color: #ffffff;
 }

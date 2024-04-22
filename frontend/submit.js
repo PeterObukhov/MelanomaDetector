@@ -1,6 +1,8 @@
 const form = document.getElementById("image-form");
 form.addEventListener("submit", formSubmit);
 
+good = ["Меланоцитарный невус", "Доброкачественное кератоподобное образование"]
+
 async function formSubmit(e){
     e.preventDefault()
     try{
@@ -15,7 +17,14 @@ async function formSubmit(e){
                     
         const responseData = await response.json();
         console.log(responseData)
-        document.getElementById("result").innerHTML = "Результат: " + responseData.result;
+        var result = responseData.result;
+        document.getElementById("result").innerHTML = "Результат: " + result;
+        if(good.includes(result)){
+            document.getElementById("result").style.color = 'green';
+        }
+        else{
+            document.getElementById("result").style.color = 'red';
+        }
     }
     catch (error){
         console.log(error.message)

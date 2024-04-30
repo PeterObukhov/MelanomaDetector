@@ -15,11 +15,7 @@ from keras.layers import *
 from sklearn.model_selection import train_test_split
 
 class NeuralNet:
-    metadata = "Dataset/HAM10000_metadata.csv"
-    hmnist_8_8_RGB = "Dataset/hmnist_8_8_RGB.csv"
     hmnist_28_28_RGB = "backend/Dataset/hmnist_28_28_RGB.csv"
-    hmnist_8_8_L = "Dataset/hmnist_8_8_L.csv"
-    hmnist_28_28_L = "Dataset/hmnist_28_28_L.csv"
 
     classes = {4: ('nv', 'Меланоцитарный невус'),
             6: ('mel', 'Меланома'),

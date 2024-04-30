@@ -58,16 +58,15 @@ body {
     z-index: 1;
 }
 .bottom-right-text{
-    color: #5c5c5c;
     text-align: justify;
     position: absolute;
-    bottom: 0;
-    right: 7px;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
     z-index: 2;
-    height: 120px;
     width: 640px;
     font-size: 24px;
-    color: #ffffff;
+    color: #000000;
 }
 .content-block{
     background-color: #b2b2b2;

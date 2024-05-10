@@ -8,7 +8,7 @@ body {
 .melanoma-definition{
     font-size: 40px;
     position: absolute;
-    top: 169px;
+    top: 105px;
     left: 75px;
     text-align: justify;
     width: 668px;
@@ -25,9 +25,9 @@ body {
     height: 400px;
 }
 .content-block{
-    background-color: #d3d3d3;
+    background-color: #ababab;
     position: absolute;
-    right: 150px;
+    right: 75px;
     height: 100%;
     width: 825px;
     display: flex;
@@ -49,9 +49,9 @@ body {
     background-color: #ffffff;
     font-size: 65px;
     letter-spacing: 33px;
-    width: 700px;
+    width: 710px;
     height: 109px;
-    border: 5px solid #000000;
+    border-bottom: 5px solid #565656;
     text-align: center;
     line-height: 109px;
     margin: 0;
@@ -87,10 +87,13 @@ body {
     color:#787878;
 }
 .result{
-    font-size: 40px;
+    font-family: "Russo One", sans-serif;
+    font-size: 32px;
     color: #ffffff;
-    width: 700px;
+    width: 710px;
     background-color: #ffffff;
     text-align: center;
-    border: 5px solid #000000;
+    border-top: 5px solid #565656;
+    line-height: 45px;
+    letter-spacing: 5px;
 }

@@ -18,7 +18,7 @@ async function formSubmit(e){
         const responseData = await response.json();
         console.log(responseData)
         var result = responseData.result;
-        document.getElementById("result").innerHTML = "Результат: " + result;
+        document.getElementById("result").innerHTML = "РЕЗУЛЬТАТ: " + result.toUpperCase();
         if(good.includes(result)){
             document.getElementById("result").style.color = 'green';
         }

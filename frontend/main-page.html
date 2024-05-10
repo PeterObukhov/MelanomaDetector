@@ -1,43 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles/main-page-style.css">
     </head>
     <body>
-        <div class="left-container">
-            <img class="left-blob" src="./assets/Vector 1.svg"></img>
-            <img src="./assets/people.svg">
+        <div class="melanoma-definition">
+            Меланома кожи – злокачественная опухоль нейроэктодермального происхождения, исходящая из меланоцитов  (пигментных клеток)   кожи 
         </div>
-
-        <div class="upper-right-container">
-            <img class="upper-right-blob" src="./assets/Vector 2.svg"></img>
-            <div class="upper-right-text">
-                Данное приложение может помочь пользователям на раннем этапе подтвердить
-                имеющиеся опасения насчет какого-либо кожного образования, обозначив
-                необходимость посещения врача 
-            </div>
-        </div>
-
-        
-        <img class="bottom-right-blob" src="./assets/Vector 3.svg"></img>
-        <div class="bottom-right-text">
+        <div class="warning-text">
             Несмотря на высокую точность системы, она является средством первичной диагностики, а не постановки врачебного диагноза, поэтому, в случае сомнений, необходимо посетить специалиста в данной области
         </div>
-        
         <form method="post" id="image-form" enctype="multipart/form-data">
             <div class="content-block">
-                <div class="image-upload-container">
-                    <label for="imageInput">Изображение:</label>
-                    <input type="file" onchange="readURL(this)" id="imageInput" accept="image/*" /><br />
-                </div>
-                <div class="image-container">
-                    <img id="image" src="#" alt="your image" width="400" height="300"/>
-                </div>
-                <div classs="submit-container">
-                    <input type="submit" id="submit" value="Подтвердить" />
-                </div>
-                <div>
-                    <label class="result" id="result"></label>
+                <div class="file-upload-block">
+                    <p class="check">ПРОВЕРКА</p>
+                    <div class="image-upload-container">
+                        <input type="file" onchange="readURL(this)" style="display:none;" id="imageInput" accept=".jpeg, .jpg, .png, .bmp" />
+                        <input type="button" id="loadFile" value="ВЫБЕРИТЕ ФАЙЛ" class="load-file-button" onclick="document.getElementById('imageInput').click();" />
+                    </div>
+                    <div class="image-container">
+                        <img id="image" alt="your image" width="710" height="248" src="./assets/photoPlaceholder.png"/>
+                    </div>
+                    <input class="submit-button" type="submit" id="submit" value="Подтвердить" />
+                    <label class="result" style="display:none;" id="result"></label>
                 </div>
             </div>
         </form>

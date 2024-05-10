@@ -24,7 +24,9 @@ async function formSubmit(e){
         }
         else{
             document.getElementById("result").style.color = 'red';
+
         }
+        document.getElementById("result").style.display = 'block'; 
     }
     catch (error){
         console.log(error.message)

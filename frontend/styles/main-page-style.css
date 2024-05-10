@@ -2,96 +2,95 @@ body {
     background-color: white;
     color: #000000;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Russo One", sans-serif;
     margin: 0;
 }
-.left-container{
+.melanoma-definition{
+    font-size: 40px;
     position: absolute;
-    bottom: 0;
-    left: 0;
-}
-.left-container img{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-.upper-right-container{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-}
-.upper-right-blob{
-    position: absolute;
-    top:0;
-    right:0;
-}
-.upper-right-text{
-    position: absolute;
+    top: 169px;
+    left: 75px;
     text-align: justify;
-    z-index: 2;
-    top: 21px;
-    right: 30px;
-    height: 100px;
-    width: 800px;
-    font-size: 24px;
-    color: #ffffff;
+    width: 668px;
+    height: 489px;
 }
-.check-link{
-    position: absolute;
-    top: 140px;
-    right: 30px;
-    font-size: 32px;
-    font-weight: 700;
-    text-decoration: underline;
-    color: #000000;
-    letter-spacing: 3px;
-}
-.check-link:hover{
-    color:#5c5c5c
-}
-.bottom-right-blob{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
-.bottom-right-text{
+.warning-text{
+    color: #787878;
+    font-size: 36px;
     text-align: justify;
     position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 640px;
-    font-size: 24px;
-    color: #000000;
+    top: 500px;
+    left: 75px;
+    width: 668px;
+    height: 400px;
 }
 .content-block{
-    background-color: #b2b2b2;
-    border: 1px solid #CCCCCC;
-    border-radius: 25px;
+    background-color: #d3d3d3;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
+    right: 150px;
+    height: 100%;
+    width: 825px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.result{
-    font-size: 24px;
-    color: #ffffff;
+.file-upload-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 5px solid #565656;
+    height: fit-content;
+    width: fit-content;
 }
-.main-text{
-    font-size: 20px;
-    width: 1295px;
-    height: 350px;
-    text-align: justify;
-    position: absolute;
-    top: 420px;
-    right: 65px;
-    line-height: 25px;
+.check{
+    background-color: #ffffff;
+    font-size: 65px;
+    letter-spacing: 33px;
+    width: 700px;
+    height: 109px;
+    border: 5px solid #000000;
+    text-align: center;
+    line-height: 109px;
+    margin: 0;
+}
+.load-file-button{
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    letter-spacing: 5px;
+    width: 710px;
+    height: 60px;
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: #000000;
+    background-color: #ffffff;
+}
+.load-file-button:hover{
+    cursor: pointer;
+    color:#787878;
+}
+.submit-button {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    letter-spacing: 5px;
+    width: 710px;
+    height: 60px;
+    border-radius: 0px;
+    border-width: 1px;
+    border-color: #000000;
+    background-color: #ffffff;
+}
+.submit-button:hover{
+    cursor: pointer;
+    color:#787878;
+}
+.result{
+    font-size: 40px;
+    color: #ffffff;
+    width: 700px;
+    background-color: #ffffff;
+    text-align: center;
+    border: 5px solid #000000;
 }
